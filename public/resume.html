@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #3490dc;
+      margin-bottom: 5px;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    .section-title {
+      color: #3490dc;
+      border-bottom: 2px solid #3490dc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .job, .education-item, .project {
+      margin-bottom: 20px;
+    }
+    .job-title, .degree, .project-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .company, .school, .project-tech {
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+    .date {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style-type: none;
+      padding: 0;
+    }
+    .skill-item {
+      background-color: #f0f4f8;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+    .print-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #3490dc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    @media print {
+      .print-button {
+        display: none;
+      }
+      body {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-button" onclick="window.print()">Print as PDF</button>
+  
+  <div class="header">
+    <h1>Your Name</h1>
+    <p>Full Stack Developer</p>
+  </div>
+  
+  <div class="contact-info">
+    <p>Email: kotavns@gmail.com | Phone: (123) 456-7890 | Location: Your City, Country</p>
+    <p>
+      <a href="https://codolio.com/profile/praveen12" target="_blank">Codolio</a> | 
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+  
+  <div class="section">
+    <h2 class="section-title">Summary</h2>
+    <p>
+      Passionate Full Stack Developer with expertise in creating modern web applications. 
+      Strong foundation in both frontend and backend technologies, focused on building 
+      seamless, user-friendly experiences that solve real-world problems.
+    </p>
+  </div>
+  
+  <div class="section">
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills-list">
+      <li class="skill-item">JavaScript</li>
+      <li class="skill-item">React</li>
+      <li class="skill-item">Node.js</li>
+      <li class="skill-item">C++</li>
+      <li class="skill-item">SQL/MySQL</li>
+      <li class="skill-item">MongoDB</li>
+      <li class="skill-item">CSS/Tailwind</li>
+      <li class="skill-item">Responsive Design</li>
+      <li class="skill-item">SEO</li>
+      <li class="skill-item">Security</li>
+    </ul>
+  </div>
+  
+  <div class="section">
+    <h2 class="section-title">Experience</h2>
+    
+    <div class="job">
+      <div class="job-title">Senior Full Stack Developer</div>
+      <div class="company">Company Name</div>
+      <div class="date">January 2021 - Present</div>
+      <ul>
+        <li>Developed and maintained multiple web applications using React, Node.js, and MongoDB</li>
+        <li>Implemented responsive designs and improved website performance by 40%</li>
+        <li>Collaborated with cross-functional teams to deliver projects on time and within budget</li>
+        <li>Mentored junior developers and conducted code reviews</li>
+      </ul>
+    </div>
+    
+    <div class="job">
+      <div class="job-title">Full Stack Developer</div>
+      <div class="company">Previous Company</div>
+      <div class="date">June 2018 - December 2020</div>
+      <ul>
+        <li>Built RESTful APIs and integrated third-party services</li>
+        <li>Developed database schemas and optimized queries for better performance</li>
+        <li>Implemented authentication and authorization systems</li>
+        <li>Participated in agile development processes</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="section-title">Projects</h2>
+    
+    <div class="project">
+      <div class="project-name">E-commerce Platform</div>
+      <div class="project-tech">React, Node.js, MongoDB, Stripe API</div>
+      <p>
+        Developed a full-featured e-commerce platform with product catalog, shopping cart, 
+        user authentication, and payment processing using Stripe API.
+      </p>
+    </div>
+    
+    <div class="project">
+      <div class="project-name">Task Management Application</div>
+      <div class="project-tech">React, Redux, Firebase</div>
+      <p>
+        Created a collaborative task management application with real-time updates, 
+        user roles, and notifications system.
+      </p>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="section-title">Education</h2>
+    
+    <div class="education-item">
+      <div class="degree">Bachelor of Science in Computer Science</div>
+      <div class="school">University Name</div>
+      <div class="date">2014 - 2018</div>
+    </div>
+  </div>
+  
+  <script>
+    // You can add any JavaScript functionality here if needed
+  </script>
+</body>
+</html>
