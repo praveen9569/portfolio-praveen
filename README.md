@@ -106,4 +106,4 @@ You can deploy this website to various platforms like Netlify, Vercel, or GitHub
 4. Set the publish directory to `dist`
 
 ## License
-This project is open source and available under the MIT License.
+This project is open source 
