@@ -109,44 +109,60 @@ const Projects = () => {
     };
   }, []);
 
-  const projects = [
-    {
-      title: 'E-Commerce Platform',
-      description: 'A full-featured online store with product catalog, shopping cart, and secure checkout.',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: '',
-      link: '#',
-      category: 'web',
-      delay: 0,
-    },
-    {
-      title: 'Task Management App',
-      description: 'A productivity application for organizing tasks, setting deadlines, and tracking progress.',
-      tags: ['React', 'Firebase', 'Tailwind CSS'],
-      image: '',
-      link: '#',
-      category: 'web',
-      delay: 100,
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website showcasing projects and skills with smooth animations.',
-      tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-      image: '',
-      link: '#',
-      category: 'web',
-      delay: 200,
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'A weather application that displays current conditions and forecasts for any location.',
-      tags: ['JavaScript', 'API Integration', 'CSS'],
-      image: '',
-      link: '#',
-      category: 'app',
-      delay: 300,
-    },
-  ];
+ const projects = [
+  {
+    title: 'Real Time Chat-App',
+    description: 'A beautifully themed login screen for a real-time Chat Application with a festive background.',
+    tags: ['React', 'Socket.io', 'Tailwind CSS', 'JWT'],
+    image: '/chatapp.png',
+    link: 'https://github.com/praveen9569/real-time-chat-app',
+    github: 'https://github.com/praveen9569/real-time-chat-app',
+    category: 'web',
+    delay: 0,
+  },
+  {
+  title: 'Developer Portfolio Website',
+  description: 'A responsive personal portfolio website to showcase projects, skills, and contact info with smooth animations.',
+  tags: ['React', 'Tailwind CSS', 'Framer Motion'],
+  image: '/port.png',  // or use your own hosted screenshot
+  link: 'https://github.com/praveen9569/portfolio-praveen', // 🔁 Replace with your actual live portfolio link
+  github: 'https://github.com/praveen9569/portfolio-praveen', // 🔁 Replace with your GitHub repo link
+  category: 'web',
+  delay: 400,
+},
+   {
+    title: 'Movie Recommendation App',
+    description: 'A React-based movie recommendation system using a custom AI/ML model or API integration.',
+    tags: ['React', 'API', 'Recommendation System'],
+    image: '/movie.png',
+    link: 'https://github.com/praveen9569/movie-recommadtion-system',
+    github: 'https://github.com/praveen9569/movie-recommadtion-system',
+    category: 'web',
+    delay: 300,
+  },
+  {
+    title: 'Awesome To-Do List',
+    description: 'A sleek and animated to-do list app with glassmorphism UI and responsive design.',
+    tags: ['JavaScript', 'CSS', 'Frontend'],
+    image: '/todo.png',
+    link: 'https://github.com/praveen9569/TO-DO-APP',
+    github: 'https://github.com/praveen9569/TO-DO-APP',
+    category: 'web',
+    delay: 100,
+  },
+  {
+    title: 'Modern Calculator',
+    description: 'A minimal and responsive calculator app with basic arithmetic operations.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    image: '/calculator.png',
+    github: 'https://github.com/yourusername/modern-calculator',
+    link: 'https://github.com/yourusername/modern-calculator',
+    category: 'app',
+    delay: 200,
+  },
+ 
+];
+
 
   const filteredProjects = filter === 'all' 
     ? projects 
