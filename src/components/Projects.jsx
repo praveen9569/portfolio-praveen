@@ -125,11 +125,59 @@ const Projects = () => {
   description: 'A responsive personal portfolio website to showcase projects, skills, and contact info with smooth animations.',
   tags: ['React', 'Tailwind CSS', 'Framer Motion'],
   image: '/port.png',  // or use your own hosted screenshot
-  link: 'https://github.com/praveen9569/portfolio-praveen', // 🔁 Replace with your actual live portfolio link
+  link: 'https://portfolio-praveen-orcin.vercel.app/', // 🔁 Replace with your actual live portfolio link
   github: 'https://github.com/praveen9569/portfolio-praveen', // 🔁 Replace with your GitHub repo link
   category: 'web',
   delay: 400,
 },
+{
+  title: 'ThinkBoard',
+  description: 'ThinkBoard helps you capture and organize ideas instantly — a fast, intuitive note-taking app built with the MERN stack.',
+  tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Framer Motion', 'JWT Auth', 'REST API', 'Cloud Deployment'],
+  image: '/port.png', // or replace with your hosted screenshot (e.g. "/screenshots/thinkboard-1.png")
+  link: 'https://note-taking-app-5d47.onrender.com/', // live demo
+  github: 'https://github.com/praveen9569/note_taking_app', // repository
+  category: 'web',
+  delay: 400,
+
+  // additional fields (useful for portfolio cards / detailed project pages)
+  short: 'A responsive MERN note-taking app with authentication, rich CRUD operations, and a clean UI.',
+  features: [
+    'User signup & JWT-based authentication',
+    'Create, read, update and delete notes (CRUD)',
+    'Rich text / basic formatting for notes (title, body)',
+    'Search & filter notes',
+    'Responsive UI with Tailwind CSS and smooth animations using Framer Motion',
+    'Server-side REST API with Express and MongoDB',
+    'Deployed to Render (live demo link provided)'
+  ],
+  techStack: {
+    frontend: ['React', 'Tailwind CSS', 'Framer Motion', 'Axios', 'React Router'],
+    backend: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT'],
+    devops: ['Render']
+  },
+  role: 'Full-stack developer — built frontend, backend, and deployed the app',
+  duration: '2–3 weeks (development + polish)',
+  highlights: [
+    'Simple, intuitive UX focused on quick note capture',
+    'Clean component structure for easy extension',
+    'Secure auth with access tokens',
+    'Lightweight and fast — ideal for quick prototypes or portfolio demo'
+  ],
+  howToRunLocally: [
+    '1. Clone the repo: git clone https://github.com/praveen9569/note_taking_app.git',
+    '2. cd note_taking_app',
+    '3. Install root deps (if monorepo) or go to each package: npm install',
+    '4. Create a .env file with MONGO_URI, JWT_SECRET, PORT, and any other required vars',
+    '5. Start backend: npm run server (or as specified in repo)',
+    '6. Start frontend: npm run client',
+    '7. Visit http://localhost:3000'
+  ],
+  license: 'MIT',
+  createdAt: '2025-12-12'
+}
+
+
    {
     title: 'Movie Recommendation App',
     description: 'A React-based movie recommendation system using a custom AI/ML model or API integration.',
@@ -160,6 +208,7 @@ const Projects = () => {
     category: 'app',
     delay: 200,
   },
+  
  
 ];
 
